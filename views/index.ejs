@@ -1,11 +1,172 @@
 <%- include('partials/header') -%>
+<body class="main-body">
 
-<main class="container">
-    <div class="row justify-content-around mt-5">
-        <a href="/login" class="col-3 btn btn-primary"> Login</a>
-        <a href="/signup" class="col-3 btn btn-primary"> Signup</a>
-    </div>
-</main>
+<nav class="relative w-full flex flex-wrap items-center justify-between">
+        <div class="container-fluid w-full flex flex-wrap items-center justify-between px-6">
+          <div class="container-fluid">
+            <img src="../imgs/logo2.png" alt="" class="max-w-md nav--logo" style="height: 70px">
+          </div>
+
+          <div>
+            <a href="/login"  class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"> Login</a>
+            <a href="/signup"  class="btn btn-outline-dark rounded"> Signup</a>
+        </div>
+        </div>
+</nav>
     
+  
+<main class="container flex flex-col-reverse gap-6 justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
+        <div class="flex flex-col justify-center p-4 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+            <h2 class="text-6xl">The easiest way to find <span class="text-rose-600">mentors and collaborators</span></h2>
+            <p class="mt-4 mb-6 font-medium text-xl">Are you looking for creative mentorship or are you looking for posssible collaborators,partners etc ? Creatives connect allows you to easily connect with other
+                creatives
+            </p>
+            <a href="/signup" class="inline-flex items-center justify-center w-full px-6 py-3 mb-2 text-lg text-white bg-[#111827] hover:bg-[#fcd34d] rounded-2xl sm:w-auto sm:mb-0">
+                Get Started
+                <svg class="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </a>
+        </div>
 
-<%- include('partials/footer') -%>
+        <div class="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+            <img src="../imgs/Hero.png" alt="">
+        </div>
+    
+ </main>
+
+
+
+ <section class="recent-activities container mx-auto">
+     <div class="flex justify-between mb-6">
+        <h3 class="text-3xl">Featured</h3>
+        <p><a href="/feed">View More <svg class="w-4 h-4 ml-1 inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a> </p>
+     </div>
+        <div class="flex flex-wrap gap-6 justify-center ">
+            <div class="">
+                <div class="rounded-lg shadow-lg bg-white max-w-sm">
+                  <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
+                    <img class="rounded-t-lg h-80" src="../imgs/finally.jpg" alt=""/>
+                  </a>
+                  <div class="p-6">
+                    <h5 class="text-gray-900 text-xl font-medium mb-2 text-bold">Tracy Young</h5>
+                    <p class="text-gray-700 text-base mb-4">
+                      Creative Director
+                    </p>
+                    <button type="button" class=" inline-block px-6 py-2.5 bg-[#fcd34d] text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">View Profile</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class=" ">
+                <div class="rounded-lg shadow-lg bg-white max-w-sm">
+                  <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
+                    <img class="rounded-t-lg h-80" src="../imgs/charles.jpg" alt=""/>
+                  </a>
+                  <div class="p-6">
+                    <h5 class="text-gray-900 text-xl font-medium mb-2">Charles Mwepu</h5>
+                    <p class="text-gray-700 text-base mb-4">
+                      Photographer
+                    </p>
+                    <button type="button" class=" inline-block px-6 py-2.5 bg-[#fcd34d] text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">View Profile</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="">
+                <div class="rounded-lg shadow-lg bg-white max-w-sm">
+                  <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
+                    <img class="rounded-t-lg h-80" src="../imgs/troy.jpg" alt=""/>
+                  </a>
+                  <div class="p-6">
+                    <h5 class="text-gray-900 text-xl font-medium mb-2">Grace Sterling</h5>
+                    <p class="text-gray-700 text-base mb-4">
+                   Artist
+                    </p>
+                    <button type="button" class=" inline-block px-6 py-2.5 bg-[#fcd34d] text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">View Profile</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="">
+                <div class="rounded-lg shadow-lg bg-white max-w-sm">
+                  <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
+                    <img class="rounded-t-lg h-80" src="../imgs/brooke-cagle.jpg" alt=""/>
+                  </a>
+                  <div class="p-6">
+                    <h5 class="text-gray-900 text-xl font-medium mb-2">Brooke Cagle</h5>
+                    <p class="text-gray-700 text-base mb-4">
+                     SongWriter
+                    </p>
+                    <button type="button" class=" inline-block px-6 py-2.5 bg-[#fcd34d] text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">View Profile</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="">
+                <div class="rounded-lg shadow-lg bg-white max-w-sm">
+                  <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
+                    <img class="rounded-t-lg h-80" src="../imgs/profile.jpg" alt=""/>
+                  </a>
+                  <div class="p-6">
+                    <h5 class="text-gray-900 text-xl font-medium mb-2">Janet Jackson</h5>
+                    <p class="text-gray-700 text-base mb-4">
+                     Film Director
+                    </p>
+                    <button type="button" class=" inline-block px-6 py-2.5 bg-[#fcd34d] text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">View Profile</button>
+                  </div>
+                </div>
+              </div>
+              
+        </div>
+     </div>
+
+ </section>
+
+
+<section class="story-of-the-week bg-[#f4f4f5] shadow-lg p-6  mx-auto py-10 mt-24">
+    <div class="container">
+        <h2 class=" mx-auto text-4xl p-2 text-center">Story of the Week</h2>
+    </div>
+    <div class=" flex flex-col gap-6 justify-center sm:py-12 lg:py-24 lg:flex-row justify-around">
+        <div class="flex flex-col justify-center text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+            <h4 class="text-2xl text-bold">Meet Thomas Ansah</h4>
+            <p class="text-base my-10">This week we talk to Thomas, a man whose story is inspring. He shares his story of how Creative Connect helped him meet people that fast tracked his career Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus veniam maiores accusantium delectus minima iusto, sapiente, natus, impedit magni 
+                itaque commodi? Consectetur, totam. Corrupti enim vero obcaecati dolorem cumque culpa, nam cum perferendis optio at repudiandae, voluptates minima doloremque. Suscipit.</p>
+                <a href="#" class="inline-flex items-center justify-center w-full px-6 py-3 mb-2 text-lg text-white bg-[#111827] rounded-2xl sm:w-auto sm:mb-0">
+                    Read More
+                    <svg class="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+        </div>
+
+        <div class="flex items-center justify-center p-6 mt-8 lg:mt-0 h-auto sm:h-80 lg:h-96 xl:h-112 2xl:h-128 overflow-hidden">
+            <img src="../imgs/gift.jpg" class="max-w-full">
+        </div>
+    </div>
+</section>
+
+
+<section class="bg-[#fda4af] py-10">
+     <div class="cta-text p-5">
+        <h2 class="mb-6 font-sans text-3xl font-bold text-white sm:text-4xl text-center">
+           Join Creatives Connect and accelerate your career
+          </h2>
+          <p class="mb-6 text-base text-indigo-100 md:text-lg px-auto text-center">
+           Subscribe to be the first to know about our big Updates and offers
+          </p>
+          <form class="flex flex-col items-center w-full mb-4 md:flex-row md:px-16 justify-center align-center">
+            <div class="flex flex-col align-center">
+              <input class="border py-3 px-3 text-grey-darkest rounded" type="text" name="email" id="email">
+            </div>
+            <a
+              href="/"
+              class="inline-flex items-center justify-center w-full h-12 px-6 font-semibold tracking-wide text-teal-900 transition duration-200 rounded shadow-md md:w-auto hover:text-deep-purple-900 bg-teal-accent-400 hover:bg-teal-accent-700 focus:shadow-outline focus:outline-none"
+            >
+              Subscribe
+            </a>
+          </form>
+     </div>
+
+ </section>
+
+ 
+
+ <%- include('partials/footer') -%> 

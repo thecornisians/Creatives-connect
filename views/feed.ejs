@@ -1,15 +1,65 @@
 <%- include('partials/header') -%>
+<%- include('partials/nav') -%>
   <div class="container">
     <div class="row justify-content-center mt-5">
-      <ul class="row list-unstyled">
+      <ul class="row">
         <% for(var i=0; i<posts.length; i++) {%>
+          <article class="">
+            <section class="post bg-white py-2 my-2 border rounded ">
+              <!-- top -->
+              <div class="post-header p-2 flex items-start">
+                <a href="#" class="w-12 h-12 mr-2">
+                 <img src="https://homevest.com/wp-content/uploads/2019/05/female1-512.png" alt="image">
+                </a>
+ 
+                <a href="#" >
+                   <h3 class="flex items-center" >
+                     <span class="text-gray-700 font-bold hover:text-blue-500 hover:underline ">Harriet Best</span>
+                     <span class="w-1 h-1  mx-1.5 bg-gray-600 rounded-full self-center"></span>
+                     <span class="text-gray-500 font-light">Following</span>
+                   </h3>
+ 
+                   <p class="text-sm text-gray-500">
+                     Founder and Writer at Harriet Photography
+                   </p>
+ 
+                   <p class="time text-sm text-gray-500 flex items-center">
+                     <span>1d</span>
+                     <span class="w-1 h-1  mx-1.5 bg-gray-600 rounded-full self-center"></span>
+                     <i class="fas fa-globe-asia text-lg"></i>
+                   </p>
+ 
+                </a>
+ 
+                <button style="margin-left:auto;" class="dots w-7 h-7 flex justify-center items-center rounded-full hover:bg-gray-200">
+                   <span class="w-1 h-1 mr-0.5 bg-gray-600 rounded-full"></span>
+                   <span class="w-1 h-1 mr-0.5 bg-gray-600 rounded-full"></span>
+                   <span class="w-1 h-1 mr-0.5 bg-gray-600 rounded-full"></span>
+                </button>
+ 
+              </div>
+ 
+              <!-- post article -->
+              <div class="px-2">
+                <p class="py-2">
+                  caption here
+                </p>
+ 
+                <a href="#" class="text-blue-600 hover:underline">https://harrietfh.me</a>
+              </div>
+ 
           <li class="col-6 justify-content-between mt-5">
-            <a href="/post/<%= posts[i]._id%>">
-              <img class="img-fluid" src="<%= posts[i].image%>">
+            <a href="/post/<%= posts[i]._id%>" >
+              <img class="img-fluid w-96 h-auto mr-2 max-w-full" src="<%= posts[i].image%>">
             </a>
+            <p></p>
           </li>
         <% } %>
         </ul>
     </div>
   </div>  
+
+  
+       
+
 <%- include('partials/footer') -%>
