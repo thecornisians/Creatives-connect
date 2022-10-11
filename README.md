@@ -1,3 +1,27 @@
+# About Project
+A fullstack social media Application.
+
+**Link to project:** 
+
+![alt tag](http://placecorgi.com/1200/650)
+
+## How It's Made:
+
+**Tech used:** 
+Express.js
+Node
+EJS
+Passport
+Mongoose
+JavaScript
+CSS
+Cloudinar
+
+
+## Optimizations
+*(optional)*
+Fix avatar feature and allow user to upload their profile pictures.
+
 # Install
 
 `npm install`
@@ -15,6 +39,16 @@
 
 ---
 
-# Run
+#How to Run application
 
 `npm start`
+
+## Lessons Learned:
+
+
+
+
+
+
+
+
