@@ -10,19 +10,19 @@ A fullstack social media Application.
 ## How It's Made:
 
 **Tech used:** 
-Express.js
-Node
-EJS
-Passport
-Mongoose
-JavaScript
-CSS
+Express.js,
+Node,
+EJS,
+Passport,
+Mongoose,
+JavaScript,
+CSS,
 Cloudinar
 
 
 ## Optimizations
-*(optional)*
-Fix avatar feature and allow user to upload their profile pictures.
+
+Fix avatar feature and allow users to upload their profile pictures.
 
 # Install
 
