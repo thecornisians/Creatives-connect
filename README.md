@@ -3,7 +3,8 @@ A fullstack social media Application.
 
 **Link to project:** 
 
-![alt tag](http://placecorgi.com/1200/650)
+![creative-connect]![Uploading ezgif.com-gif-maker (1).gif…]()
+
 
 ## How It's Made:
 
