@@ -1,82 +1,5 @@
 <%- include('partials/header') -%>
 <%- include('partials/nav') -%>
-<!-- <section class="header bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 h-30"></section>  
-<div class="container">
-  <div class="row mt-5"> 
-    <div class="col-6">
-      <div class="text-center">
-        <div class="text-center mt-12">
-          <h3 class="text-4xl font-semibold leading-normal mb-2 text-blueGray-700 mb-2">
-            <%- user.userName %>
-          </h3>
-          <div class="text-sm leading-normal mt-0 mb-2 text-blueGray-400 font-bold uppercase">
-            <i class="fas fa-map-marker-alt mr-2 text-lg text-blueGray-400"></i>
-            Accra, Ghana.
-          </div>
-          <div class="mb-2 text-blueGray-600 mt-10">
-            <i class="fas fa-briefcase mr-2 text-lg text-blueGray-400"></i>Creative Director
-          </div>
-        </div>
-        <div class="mt-10 py-10 border-t border-blueGray-200 text-center">
-          <div class="flex flex-wrap justify-center">
-            <div class="w-full lg:w-9/12 px-4">
-              <h3 class="text-2xl uppercase">About Me</h3>
-              <p class="mb-4 text-lg leading-relaxed text-blueGray-700">
-                An artist of considerable range, Jenna the name taken by
-                Melbourne-raised, Brooklyn-based Nick Murphy writes,
-                performs and records all of his own music, giving it a
-                warm, intimate feel with a solid groove structure. An
-                artist of considerable range.
-              </p>
-            </div>
-          </div>
-        </div> 
-    
-    
-    
-    
-      <div class="mt-5">
-        <h2 class="text-2xl uppercase undeline">Add a post</h2>
-        <form action="/post/createPost" enctype="multipart/form-data" method="POST" class="bg-slate-400 p-5 w-1/2 m-auto">
-          <div class="mb-3">
-              <label for="title" class="form-label">Title</label>
-              <input type="text" class="form-control" id="title" name="title">
-          </div>
-          <div class="mb-3">
-            <label for="caption" class="form-label">Caption</label>
-            <textarea class="form-control" id="caption" name="caption"></textarea>
-          </div>
-          <div class="mb-3">
-            <label for="imgUpload" class="form-label">Image</label>
-            <input type="file" class="form-control" id="imageUpload" name="file">
-          </div>
-          <button type="submit" class="btn btn-primary" value="Upload">Submit</button>
-        </form>
-      </div>
-    </div>
-    
-    <div class="col-6">
-      <h2 class="uppercase text-2xl text-center font-bold mt-4 mb-4">Recent Posts</h2>
-    <ul class="row list-unstyled flex row">
-    <% for(var i=0; i<posts.length; i++) {%>
-      <li class="col-6 justify-content-between mt-5">
-        <a href="/post/<%= posts[i]._id%>">
-          <img class="img-fluid w-96 h-72 max-h-full mr-2 max-w-full" src="<%= posts[i].image%>">
-        </a>
-      </li>
-    <% } %>
-    </ul>
-    <div class="row justify-content-center mt-5">
-      <a class="btn btn-primary" href="/feed">Return to Feed</a>
-    </div>  
-        </div>  
-      </div>
-    </div>
-  </div>
-  
-      </section>
-
-  </div> -->
 
 
 
@@ -93,30 +16,25 @@
                      border-2 border-pink-600 p-1" src="/imgs/troy.jpg" alt="profile">
       </div>
 
-      <!-- profile meta -->
       <div class="w-8/12 md:w-7/12 ml-4">
         <div class="md:flex md:flex-wrap md:items-center mb-4">
-          <h2 class="text-3xl inline-block font-light md:mr-2 mb-2 sm:mb-0">
-            <%-user.userName -%>
-          </h2>
+                <h2 class="text-3xl inline-block font-light md:mr-2 mb-2 sm:mb-0">
+                  <%-user.userName -%>
+                </h2>
+                <!-- follow button -->
+                <a href="#" class="bg-blue-500 px-2 py-1 text-white font-semibold text-sm rounded block text-center sm:inline-block block">Follow</a>
 
-          <!-- badge -->
-          <span class="inline-block fas fa-certificate fa-lg text-blue-500 
-                               relative mr-6 text-xl transform -translate-y-2" aria-hidden="true">
-            <i class="fas fa-check text-white text-xs absolute inset-x-0
-                               ml-1 mt-px"></i>
-          </span>
-
-          <!-- follow button -->
-          <a href="#" class="bg-blue-500 px-2 py-1 
-                        text-white font-semibold text-sm rounded block text-center 
-                        sm:inline-block block">Follow</a>
+                <!-- edit profile -->
+                <div>
+                          
+                </div>
+          
         </div>
 
         <!-- post, following, followers list for medium screens -->
         <ul class="hidden md:flex space-x-8 mb-4">
           <li>
-            <span class="font-semibold">10</span>
+            <span class="font-semibold"><%= posts.length %></span>
             posts
           </li>
 
@@ -132,8 +50,7 @@
 
         <!-- user meta form medium screens -->
         <div class="hidden md:block">
-          <h1 class="font-semibold"><%-user.userName -%></h1>
-          <span>Travel, Nature and Music</span>
+          <span>  <i class="fas fa-briefcase mr-2 text-lg text-blueGray-400"></i> Creative Director</span>
           <p>Lorem ipsum dolor sit amet consectetur</p>
         </div>
 
@@ -142,7 +59,7 @@
       <!-- user meta form small screens -->
       <div class="md:hidden text-sm my-2">
         <h1 class="font-semibold"><%-user.userName -%></h1>
-        <span>Travel, Nature and Music</span>
+        <span>  <i class="fas fa-briefcase mr-2 text-lg text-blueGray-400"></i> Creative Director</span>
         <p>Lorem ipsum dolor sit amet consectetur</p>
       </div>
 
