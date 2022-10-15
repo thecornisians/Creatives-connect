@@ -3,8 +3,7 @@ A fullstack social media Application.
 
 **Link to project:** 
 
-![creative-connect]![ezgif com-gif-maker (1)](https://imgur.com/a/Z2nq3OF)
-
+![alt tag](https://imgur.com/a/Z2nq3OF)
 
 
 ## How It's Made:
