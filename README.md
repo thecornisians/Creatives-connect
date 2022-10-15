@@ -3,7 +3,8 @@ A fullstack social media Application.
 
 **Link to project:** 
 
-![alt tag](https://imgur.com/a/Z2nq3OF)
+![creatives connect](https://user-images.githubusercontent.com/84820874/195991907-4582b6de-145d-4561-a38c-4b2ecadf96fd.gif)
+
 
 
 ## How It's Made:
