@@ -17,7 +17,7 @@ Passport,
 Mongoose,
 JavaScript,
 CSS,
-Cloudinar
+Cloudinary
 
 
 ## Optimizations
