@@ -29,6 +29,9 @@ Fix avatar feature and allow users to upload their profile pictures.
 `npm install`
 
 ---
+#Test Account
+username : muller
+password: mullerhere
 
 # Things to add
 
