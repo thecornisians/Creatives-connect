@@ -18,6 +18,7 @@ Mongoose,
 JavaScript,
 CSS,
 Cloudinary
+tailwind
 
 
 ## Optimizations
